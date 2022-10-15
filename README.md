@@ -38,5 +38,13 @@ The function `selfPowers(power,lastDigits)` returns a number, where `power` and 
 
 Allows the user to enter power and number of last digits in order to find the last digits of the series.  Performs checks on inputs.  If the inputs are not valid, an error message is displayed.
 
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.2 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
 
 
