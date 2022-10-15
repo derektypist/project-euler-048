@@ -8,6 +8,14 @@ Information at [Project Euler 048](https://projecteuler.net/problem=48)
 
 ## UX
 
+**Getting Started**
+
+In the power field, enter a whole number between 10 and 1000 (without leading zeros).
+
+In the number of last digits field, enter the number of last digits between 1 and 10 (without leading zeros).
+
+Click on the Submit Button.  You will see the power and number of last digits required as well as the last digits of the series, unless you have made an invalid input.  Click on the Reset Button to clear the information or to start again.
+
 **User Stories**
 
 As a user, I expect the function `selfPowers(10,3)` to return a number.
@@ -25,4 +33,10 @@ User stories on the function `selfPowers(power,lastDigits)` taken from [FreeCode
 **Information Architecture**
 
 The function `selfPowers(power,lastDigits)` returns a number, where `power` and `lastDigits` are numbers.
+
+## Features
+
+Allows the user to enter power and number of last digits in order to find the last digits of the series.  Performs checks on inputs.  If the inputs are not valid, an error message is displayed.
+
+
 
