@@ -64,3 +64,21 @@ function powerLastDigits(num,mask) {
     }
     return lastDigits;
 }
+
+/*
+    Function to get the last digits of the series
+    1**1 + 2**2 + 3**3 + ... + 1000**1000
+    selfPowers(10,3)    returns 317
+    selfPowers(150,6)   returns 29045
+    selfPowers(673,7)   returns 2473989
+    selfPowers(1000,10) returns 9110846700
+
+*/
+function selfPowers(power,lastDigits) {
+    let total = 0;
+    const mask = 10 ** lastDigits;
+    for (let i=1;i<power;i++) {
+        total = (total + powerLastDigits(i,mask)) % mask;
+    }
+    return total;
+}
