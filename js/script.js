@@ -57,9 +57,9 @@ function getInfo() {
 }
 
 // Function to get the last digits
-function powerLastDigits(num,mask) {
+function powerLastDigits(num, mask) {
     let lastDigits = 1;
-    for (let i=0;i<num;i++) {
+    for (let i = 0; i < num; i++) {
         lastDigits = (lastDigits * num) % mask;
     }
     return lastDigits;
@@ -74,11 +74,11 @@ function powerLastDigits(num,mask) {
     selfPowers(1000,10) returns 9110846700
 
 */
-function selfPowers(power,lastDigits) {
+function selfPowers(power, lastDigits) {
     let total = 0;
     const mask = 10 ** lastDigits;
-    for (let i=1;i<power;i++) {
-        total = (total + powerLastDigits(i,mask)) % mask;
+    for (let i = 1; i < power; i++) {
+        total = (total + powerLastDigits(i, mask)) % mask;
     }
     return total;
 }
