@@ -6,7 +6,7 @@ function getInfo() {
     let num1 = document.getElementById("mypower").value;
     let num2 = document.getElementById("mylastdigits").value;
     // Check if inputs are valid
-    if (isNaN(num1) || isNaN(num2) || num1.length==0 || num2.length==0 || num1<10 || num1>1000 || num2<1 || num2>10 || (num1.length>1 && num1[0]=="0") || (num2.length>1 && num2[0]=="0") || !Number.isInteger(Number(num1)) || !Number.isInteger(Number(num2))) {
+    if (isNaN(num1) || isNaN(num2) || num1.length == 0 || num2.length == 0 || num1 < 10 || num1 > 1000 || num2 < 1 || num2 > 10 || (num1.length > 1 && num1[0] == "0") || (num2.length > 1 && num2[0] == "0") || !Number.isInteger(Number(num1)) || !Number.isInteger(Number(num2))) {
         txt += `Invalid input(s) - `;
 
         // Set Condition for Not a Number
@@ -18,25 +18,25 @@ function getInfo() {
         }
 
         // Set Condition for Empty Inputs
-        if (num1.length==0 || num2.length==0) {
+        if (num1.length == 0 || num2.length == 0) {
             // Condition if first input is empty
-            if (num1.length==0) txt += `Power not entered.  `;
+            if (num1.length == 0) txt += `Power not entered.  `;
             // Condition if second input is empty
-            if (num2.length==0) txt += `Number of Last Digits not entered.  `;
+            if (num2.length == 0) txt += `Number of Last Digits not entered.  `;
         }
 
         // Set Condition if first input is not in range
-        if (num1<10 || num1>1000) txt += `Power must be between 10 and 1000.  `;
+        if (num1 < 10 || num1 > 1000) txt += `Power must be between 10 and 1000.  `;
 
         // Set Condition if second input is not in range
-        if (num2<1 || num2>10) txt += `Number of last digits must be between 1 and 10.  `;
+        if (num2 < 1 || num2 > 10) txt += `Number of last digits must be between 1 and 10.  `;
 
         // Set Condition for Leading Zeros
-        if ((num1.length>1 && num1[0]=="0") || (num2.length>1 && num2[0]=="0")) {
+        if ((num1.length > 1 && num1[0] == "0") || (num2.length > 1 && num2[0] == "0")) {
             // Condition if first input includes leading zeros
-            if (num1.length>1 && num1[0]=="0") txt += `Power must not include leading zeros.  `;
+            if (num1.length > 1 && num1[0] == "0") txt += `Power must not include leading zeros.  `;
             // Condition if second input includes leading zeros
-            if (num2.length>1 && num2[0]=="0") txt += `Number of Last Digits must not include leading zeros.  `;
+            if (num2.length > 1 && num2[0] == "0") txt += `Number of Last Digits must not include leading zeros.  `;
         }
 
         // Set Conditions for Number not an integer
@@ -48,7 +48,7 @@ function getInfo() {
         }
     } else {
         txt += `Your inputs: Power ${num1}, Number of Last Digits ${num2}. <p>`;
-        txt += `Last ${num2} digits are ${selfPowers(num1,num2)}.`;
+        txt += `Last ${num2} digits are ${selfPowers(num1, num2)}.`;
     }
 
     // Display Information in the Browser
