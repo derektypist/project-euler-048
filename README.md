@@ -18,6 +18,17 @@ Click on the Submit Button.  You will see the power and number of last digits re
 
 **User Stories**
 
+As a user, I expect to get an error message, if I do any of the following:
+
+- Not enter anything in any or all of the input fields
+- Entering text other than a number in any or all of the input fields
+- Entering a number less than 10 or greater than 1000 in the power field
+- Entering a number less than 1 or greater than 10 in the number of last digits field
+- Including leading zeros in any or all of the input fields
+- Entering a number but it is not an integer in any or all of the input fields
+
+As a user, I can clear the information or start again.
+
 As a user, I expect the function `selfPowers(10,3)` to return a number.
 
 As a user, I expect the function `selfPowers(10,3)` to return 317.
