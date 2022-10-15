@@ -77,7 +77,7 @@ function powerLastDigits(num, mask) {
 function selfPowers(power, lastDigits) {
     let total = 0;
     const mask = 10 ** lastDigits;
-    for (let i = 1; i < power; i++) {
+    for (let i = 1; i <= power; i++) {
         total = (total + powerLastDigits(i, mask)) % mask;
     }
     return total;
