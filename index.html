@@ -21,5 +21,28 @@
         <p>The series 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... + 10<sup>10</sup> = 10405071317.</p>
         <p>Find the last ten digits of the series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... + 1000<sup>1000</sup>.  Begin by entering the power and number of last digits.</p>
     </section>
+
+    <!-- Set Up Form-->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Labels and Inputs -->
+            <article class="mb-3">
+                <label for="mypower" class="form-label">Power (Required)</label>
+                <input class="form-control" title="Enter whole number between 10 and 1000 (without leading zeros)" placeholder="Enter whole number between 10 and 1000 (without leading zeros)" id="mypower">
+            </article>
+
+            <article class="mb-3">
+                <label for="mylastdigits" class="form-label">Number of Last Digits (Required)</label>
+                <input class="form-control" title="Enter whole number between 1 and 10 (without leading zeros)" placeholder="Enter whole number between 1 and 10 (without leading zeros)" id="mylastdigits">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" class="btn btn-info" onclick="getInfo()">Submit</button>
+                <button type="reset" class="btn btn-reset" onclick="clearInfo()">Reset</button>
+            </article>
+
+        </form>
+    </section>
 </body>
 </html>
