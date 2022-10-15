@@ -55,3 +55,12 @@ function getInfo() {
     document.getElementById("numbersinfo").innerHTML = txt;
 
 }
+
+// Function to get the last digits
+function powerLastDigits(num,mask) {
+    let lastDigits = 1;
+    for (let i=0;i<num;i++) {
+        lastDigits = (lastDigits * num) % mask;
+    }
+    return lastDigits;
+}
