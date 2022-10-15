@@ -43,7 +43,7 @@ User stories on the function `selfPowers(power,lastDigits)` taken from [FreeCode
 
 **Information Architecture**
 
-The function `selfPowers(power,lastDigits)` returns a number, where `power` and `lastDigits` are numbers.
+The function `selfPowers(power,lastDigits)` returns a number, where `power` and `lastDigits` are numbers.  The variable `power` ranges from 10 to 1000 and `lastDigits` ranges from 1 to 10.
 
 ## Features
 
