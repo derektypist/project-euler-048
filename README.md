@@ -47,7 +47,7 @@ The function `selfPowers(power,lastDigits)` returns a number, where `power` and 
 
 ## Features
 
-Allows the user to enter power and number of last digits in order to find the last digits of the series.  Performs checks on inputs.  If the inputs are not valid, an error message is displayed.
+Allows the user to enter power and number of last digits in order to find the last digits of the series.  Performs checks on inputs.  If the inputs are not valid, an error message is displayed.  Future work would include the use of BigInts, but this is not required as the numbers fall within the scope of normal integers.
 
 ## Technologies
 
