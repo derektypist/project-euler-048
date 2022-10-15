@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Euler 048 - Self Powers</title>
     <!-- Load Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Set Up Headers -->
     <header class="container-fluid text-center">
@@ -19,7 +22,8 @@
     <!-- Set Up Instructions -->
     <section class="container-fluid instructions">
         <p>The series 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... + 10<sup>10</sup> = 10405071317.</p>
-        <p>Find the last ten digits of the series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... + 1000<sup>1000</sup>.  Begin by entering the power and number of last digits.</p>
+        <p>Find the last ten digits of the series, 1<sup>1</sup> + 2<sup>2</sup> + 3<sup>3</sup> + ... +
+            1000<sup>1000</sup>. Begin by entering the power and number of last digits.</p>
     </section>
 
     <!-- Set Up Form-->
@@ -28,12 +32,14 @@
             <!-- Set Up Labels and Inputs -->
             <article class="mb-3">
                 <label for="mypower" class="form-label">Power (Required)</label>
-                <input class="form-control" title="Enter whole number between 10 and 1000 (without leading zeros)" placeholder="Enter whole number between 10 and 1000 (without leading zeros)" id="mypower">
+                <input class="form-control" title="Enter whole number between 10 and 1000 (without leading zeros)"
+                    placeholder="Enter whole number between 10 and 1000 (without leading zeros)" id="mypower">
             </article>
 
             <article class="mb-3">
                 <label for="mylastdigits" class="form-label">Number of Last Digits (Required)</label>
-                <input class="form-control" title="Enter whole number between 1 and 10 (without leading zeros)" placeholder="Enter whole number between 1 and 10 (without leading zeros)" id="mylastdigits">
+                <input class="form-control" title="Enter whole number between 1 and 10 (without leading zeros)"
+                    placeholder="Enter whole number between 1 and 10 (without leading zeros)" id="mylastdigits">
             </article>
 
             <!-- Set Up and Center Buttons -->
@@ -51,4 +57,5 @@
         <script src="js/script.js"></script>
     </section>
 </body>
+
 </html>
